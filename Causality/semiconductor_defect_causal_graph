@@ -1,0 +1,13 @@
+// Semiconductor Defect Causal Graph
+digraph {
+	rankdir=LR size="8, 5"
+	T [label=Temperature]
+	P [label=Pressure]
+	PT [label="Process Time"]
+	MP [label="Material Purity"]
+	D [label=Defect]
+	T -> D
+	P -> D
+	PT -> D
+	MP -> D
+}
